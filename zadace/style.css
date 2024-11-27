@@ -1,0 +1,86 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+     
+}
+
+h1 {
+    font-family: "Roboto", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+h2 {
+    color: #4CAF50;
+    font-family: "Roboto", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Prvi paragraf (16px i boja #37474F) */
+p:nth-of-type(1) {
+    font-size: 16px;
+    color: #37474F;
+}
+
+/* Drugi paragraf (18px i boja #546E7A) */
+p:nth-of-type(2) {
+    font-size: 18px;
+    color: #546E7A;
+}
+
+/* Treći paragraf (20px i boja #78909C) */
+p:nth-of-type(3) {
+    font-size: 20px;
+    color: #78909C;
+}
+ 
+#main-title {
+    font-size: 4rem;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+
+.highlight {
+    color: #b37ae9;
+}
+ul.a {
+    list-style-type: circle;
+  }
+  
+main {
+    background-color: #ffd2f1;
+}
+
+.new-list {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.new-list li {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+
+.new-list li:nth-child(1)::before {
+    content: '●';
+    position: relative;
+   
+}
+
+.new-list li:nth-child(2)::before {
+    content: '▢';
+    position: relative;
+
+}
+
+.new-list li:nth-child(3)::before {
+    content: '◆';
+    position: relative;
+   
+}
