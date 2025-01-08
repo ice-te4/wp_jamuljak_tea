@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recepti</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #f57c00;
+            color: white;
+            padding: 1em;
+            text-align: center;
+            font-size: 2em;
+        }
+        .container {
+            padding: 2em;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .recipes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .recipe {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 1em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(33.333% - 20px);
+            box-sizing: border-box;
+        }
+        .recipe img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .recipe h2 {
+            color: #333;
+            margin-top: 0.5em;
+        }
+        .recipe p {
+            color: #555;
+        }
+        
+        .grid-layout {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(12, auto);
+            gap: 10px;
+            margin-top: 2em;
+        }
+
+        .item-a {
+            grid-column: span 12;
+            background-color: #ffc107;
+            padding: 1em;
+            text-align: center;
+        }
+        .item-b {
+            grid-column: span 8;
+            background-color: #ffecb3;
+            padding: 1em;
+        }
+        .item-c {
+            grid-column: span 4;
+            background-color: #fff8e1;
+            padding: 1em;
+        }
+
+        @media (max-width: 480px) {
+            .recipes {
+                flex-direction: column;
+            }
+            .grid-layout {
+                grid-template-columns: 1fr;
+            }
+            .item-a, .item-b, .item-c {
+                grid-column: span 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Moji Recepti</h1>
+    </header>
+
+    <div class="container">
+        <div class="recipes">
+            <div class="recipe">
+                <img src="https://cdn.shopify.com/s/files/1/0274/9503/9079/files/20220211142754-margherita-9920_5a73220e-4a1a-4d33-b38f-26e98e3cd986.jpg?v=1723650067" alt="Pizza">
+                <h2>Pizza Margherita</h2>
+                <p>Ukusna domaća pizza s rajčicama, mozzarellom i svježim bosiljkom.</p>
+            </div>
+            <div class="recipe">
+                <img src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/0346a29a89ef229b1a0ff9697184f944/Derivates/cb5051204f4a4525c8b013c16418ae2904e737b7.jpg" alt="Tjestenina">
+                <h2>Tjestenina Carbonara</h2>
+                <p>Kremasti recept za tjesteninu s jajima, pancetom i parmezanom.</p>
+            </div>
+            <div class="recipe">
+                <img src="https://gastro.24sata.hr/media/img/97/0a/0c1cabac1a04488c8c4a.jpeg" alt="Salata">
+                <h2>Cezar Salata</h2>
+                <p>Klasik s hrskavim krušnim mrvicama, piletinom i parmezanom.</p>
+            </div>
+        </div>
+
+        <div class="grid-layout">
+            <div class="item-a"><em>Dobrodošli u svijet ukusnih recepata koji će obogatiti vašu kuhinju!</em></div>
+            <div class="item-b">Želite naučiti tajne vrhunskih kuhara? Pogledajte naše savjete o tehnikama pripreme, odabiru sastojaka i stilizaciji jela kako biste svaki obrok učinili posebnim.</div>
+            <div class="item-c"><strong>Savjet dana:</strong> Uvijek pustite meso da se odmori 5-10 minuta nakon pečenja kako bi zadržalo sočnost.</div>
+        </div>
+    </div>
+</body>
+</html>
